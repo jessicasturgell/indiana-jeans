@@ -1,27 +1,62 @@
 {
-    "submissions": [
-        {
-            "id": 1,
-            "ownsBlueJeans": false,
-            "socioLocationId": 1
-        }
-    ],
-    "socioLocations": [
-        {
-            "id": 1,
-            "label": "Urban"
-        },
-        {
-            "id": 2,
-            "label": "Suburban"
-        },
-        {
-            "id": 3,
-            "label": "Semi-Rural"
-        },
-        {
-            "id": 4,
-            "label": "Rural"
-        }
-    ]
+  "submissions": [
+    {
+      "id": "1",
+      "ownsBlueJeans": false,
+      "socioLocationId": 1
+    },
+    {
+      "id": "0263",
+      "ownsBlueJeans": true,
+      "socioLocationId": 3
+    },
+    {
+      "id": "2f69",
+      "ownsBlueJeans": true,
+      "socioLocationId": 1
+    },
+    {
+      "id": "1d98",
+      "ownsBlueJeans": false,
+      "socioLocationId": 2
+    },
+    {
+      "id": "ab6f",
+      "ownsBlueJeans": true,
+      "socioLocationId": 4
+    },
+    {
+      "id": "ea72",
+      "ownsBlueJeans": false,
+      "socioLocationId": 4
+    },
+    {
+      "id": "5e83",
+      "ownsBlueJeans": false,
+      "socioLocationId": 2
+    },
+    {
+      "id": "ee98",
+      "ownsBlueJeans": true,
+      "socioLocationId": 3
+    }
+  ],
+  "socioLocations": [
+    {
+      "id": "1",
+      "label": "Urban"
+    },
+    {
+      "id": "2",
+      "label": "Suburban"
+    },
+    {
+      "id": "3",
+      "label": "Semi-Rural"
+    },
+    {
+      "id": "4",
+      "label": "Rural"
+    }
+  ]
 }
