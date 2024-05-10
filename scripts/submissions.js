@@ -4,12 +4,15 @@ export const submissionList = async () => {
     const submissions = await response.json()
     // Iterate the submissions and create some <section> representations
     let submissionHTML = ""
-    for (const submission of submissions) {
-        submissionHTML += `<section class="submission">
-        <div>owns jeans: ${submission.ownsBlueJeans}</div>
-        <div>area type foreign key: ${submission.socioLocationId}</div>
-        </section>`
-    }
-    // Return the HTML string
+    const divStringArray = submissions.map(
+        (submission) => {
+            return `<section class="submission">
+            <div>owns jeans: ${submission.ownsBlueJeans}</div>
+            <div>area type foreign key: ${submission.socioLocationId}</div>
+            </section>`
+        }
+    ) 
+    
+    submissionHTML += divStringArray.join("")
     return submissionHTML
 }

@@ -7,11 +7,23 @@ export const locationTypeChoices = async () => {
     
     document.addEventListener("change", handleOwnershipChange)
 
-    let choicesHTML = "<h2>Which type of area do you live in?</h2>"
-    for (const location of locations) {
-        choicesHTML += `<input type='radio' name='location' value='${location.id}'/> ${location.label}`
-    }
+    // let choicesHTML = "<h2>Which type of area do you live in?</h2>"
+    // for (const location of locations) {
+    //     choicesHTML += `<input type='radio' name='location' value='${location.id}'/> ${location.label}`
+    // }
 
+    // return choicesHTML
+
+
+    let choicesHTML = "<h2>Which type of area do you live in?</h2>"
+
+    const divStringArray = locations.map(
+        (location) => {
+            return `<input type='radio' name='location' value='${location.id}' />${location.label}</div>`
+        }
+    )
+    
+    choicesHTML += divStringArray.join("")
     return choicesHTML
 }
 
